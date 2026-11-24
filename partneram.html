@@ -15,9 +15,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <a class="sr" href="#main">Перейти к содержанию</a>
+<div class="announce">Пробное занятие в любом кружке — бесплатно. <a href="index.html#download">Скачать приложение</a></div>
 <header class="header">
   <div class="wrap nav">
     <a class="nav__logo" href="index.html" aria-label="OkuLand — на главную"><img src="assets/img/brand/okuland-logo-horizontal.svg" alt="OkuLand" width="190" height="38"></a>
@@ -25,9 +27,9 @@
       <a href="kruzhki.html">Все кружки</a>
       <a href="ceny.html">Цены</a>
       <div class="dd"><button type="button" aria-expanded="false">Сотрудничество</button>
-        <div class="dd__panel">
-          <a href="partneram.html">Партнёрам<small>Подключить свой кружок</small></a>
-          <a href="kompaniyam.html">Компаниям<small>Кружки для детей сотрудников</small></a>
+        <div class="dd__panel dd__panel--mega">
+          <a class="mega" href="partneram.html"><img src="assets/img/photos/ofp.webp" alt=""><span>Партнёрам<small>Подключите свой кружок и получайте новых учеников</small></span></a>
+          <a class="mega" href="kompaniyam.html"><img src="assets/img/photos/music.webp" alt=""><span>Компаниям<small>Кружки для детей ваших сотрудников</small></span></a>
         </div></div>
       <div class="dd"><button type="button" aria-expanded="false">Ещё</button>
         <div class="dd__panel">
@@ -77,6 +79,7 @@
 </main>
 <footer class="footer">
   <div class="wrap">
+    <div class="footer__cta"><h3>Найдите ребёнку занятие, к которому он будет бежать сам</h3><a class="btn btn--white" href="index.html#download">Скачать OkuLand</a></div>
     <div class="footer__grid">
       <div style="display:grid;gap:14px;align-content:start">
         <a class="footer__logo" href="index.html"><img src="assets/img/brand/okuland-logo-horizontal-white.svg" alt="OkuLand" width="180" height="36"></a>
@@ -86,9 +89,11 @@
       <div><h4>Сотрудничество</h4><a href="partneram.html">Стать партнёром</a><a href="kompaniyam.html">Компаниям</a><a href="o-nas.html">О нас</a></div>
       <div><h4>Контакты</h4><a href="tel:+77000000000">+7 700 000 00 00</a><a href="mailto:hello@okuland.kz">hello@okuland.kz</a><span style="display:block;padding:4px 0;font-size:15px">Актобе, Казахстан</span></div>
     </div>
-    <div class="footer__copy"><span>© <span data-year>2026</span> ТОО «Okuland»</span><span><a href="#" style="display:inline">Публичная оферта</a> · <a href="#" style="display:inline">Политика конфиденциальности</a></span></div>
+    <div class="footer__copy" style="margin-top:44px"><span>© <span data-year>2026</span> ТОО «Okuland»</span><span><a href="#" style="display:inline">Публичная оферта</a> · <a href="#" style="display:inline">Политика конфиденциальности</a></span></div>
   </div>
+  <div class="footer__word" aria-hidden="true">Oku<span>Land</span></div>
 </footer>
 <script src="assets/js/main.js" defer></script>
+<script type="module" src="assets/js/shanyrak3d.js"></script>
 </body>
 </html>
