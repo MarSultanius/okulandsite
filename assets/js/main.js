@@ -119,3 +119,22 @@
   // год в подвале
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();
+
+/* v2: фото-главы направлений — фото справа меняется, когда глава доходит до середины экрана */
+(function () {
+  var stage = document.querySelector('.chapters__stage');
+  if (!stage || !('IntersectionObserver' in window)) return;
+  var imgs = stage.querySelectorAll('img');
+  var label = stage.querySelector('.chapters__label');
+  var chapters = document.querySelectorAll('.chapter');
+  function show(i) {
+    chapters.forEach(function (c, k) { c.classList.toggle('is-on', k === i); });
+    imgs.forEach(function (im, k) { im.classList.toggle('is-on', k === i); });
+    if (label) label.textContent = chapters[i].querySelector('h3').textContent;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) show([].indexOf.call(chapters, e.target)); });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  chapters.forEach(function (c) { io.observe(c); });
+  show(0);
+})();
