@@ -4,27 +4,26 @@
 Чистый HTML/CSS/JS без сборки — можно открыть `index.html` в браузере или выложить на GitHub Pages / любой хостинг.
 
 ## Страницы
-- `index.html` — главная
-- `kruzhki.html` — каталог кружков с фильтрами
-- `ceny.html` — тарифы Kids / Family
-- `partneram.html` — для кружков и студий, форма заявки
-- `kompaniyam.html` — корпоративный абонемент
-- `faq.html` — вопросы и ответы
-- `o-nas.html` — о компании
-- `404.html` — страница «не найдено» (GitHub Pages подхватит её сама)
+- `index.html` — одностраничный сайт в стиле бенто: первый экран, шаги, направления, родителям, цены, партнёрам, компаниям, о нас, города, вопросы.
+- `oferta.html` — публичная оферта и политика обработки персональных данных (без БИН и банковских реквизитов).
+- `404.html` — страница «не найдено» (GitHub Pages подхватит её сама).
+- `kruzhki.html`, `ceny.html`, `partneram.html`, `kompaniyam.html`, `faq.html`, `o-nas.html` — старые адреса, перенаправляют на нужный раздел главной.
+
+## Файлы
+- `assets/v3/style.css`, `assets/v3/main.js` — стили и скрипты (анимация первого экрана, меню, переключатель Kids / Family, формы).
+- `assets/v3/fonts/` — Nunito и Nunito Sans (OFL), подключены локально.
+- `assets/img/photos/` — фото, `assets/img/brand/` — логотипы.
 
 ## Что заменить перед запуском
-- Кружки в каталоге — демо-данные в `assets/js/main.js` (массив `STUDIOS`).
-- Цены — `PRICES` в `assets/js/main.js`.
-- Формы заявок пока только показывают подтверждение: подключите отправку (WhatsApp, Telegram-бот, CRM).
-- Ссылки на App Store, Google Play, Kaspi, оферту и политику конфиденциальности; телефон и e-mail в подвале.
-- Фотографии в `assets/img/photos/` — убедитесь, что у вас есть права на их использование (лицензия стока или собственные фото с согласием родителей).
+- Цены — `PRICES` в `assets/v3/main.js` и цифры в `index.html`.
+- Форма партнёров открывает почту с готовым письмом на hello@okuland.kz. Позже подключите отправку в WhatsApp, Telegram-бот или CRM.
+- Телефон и e-mail в подвале и в оферте; ссылки на App Store и Google Play после публикации приложения.
+- В оферту добавить БИН, юридический адрес и реквизиты после регистрации ТОО.
+- Фотографии — убедитесь, что у вас есть права на их использование.
 
-## Как сделан редизайн (v2)
-Использованы: taste-skill (Leonxlnx), impeccable (pbakaus), playwright-cli (Microsoft) для проверки в браузере, подход img2threejs для 3D-шаңырака,
-DESIGN.md по формату awesome-design-md (идеи pill-кнопок из Uber DESIGN.md) и галереи navbar.gallery, footer.design, cta.gallery,
-404s.design, unsection.com, bentogrids.com, 60fps.design, motionsites.ai. Описание дизайн-системы — в `DESIGN.md`.
-Three.js r160 лежит в `assets/vendor/` (лицензия MIT).
+## Принципы интерфейса
+Законы Хика (4 пункта меню, 3 тарифа), Фиттса (кнопки 48–64 px, плитки целиком кликабельны, кнопка внизу на телефоне), Якоба (привычные шапка, аккордеон, подвал) и близости (связанное — в одной плитке).
+Первый экран построен на основе Wild Pill Hero — бесплатного дизайна с [MotionSites](https://motionsites.ai).
 
 ## Бренд
 Цвета, шрифты и логотипы — по брендбуку OkuLand: Telegram Blue `#2AABEE`, Code Blue `#007ACC`, шрифты Nunito и Nunito Sans. Логотипы в `assets/img/brand/`.
