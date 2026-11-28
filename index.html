@@ -10,7 +10,7 @@
 <link rel="icon" href="assets/img/brand/okuland-symbol-blue.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
 <link rel="preload" href="assets/v3/fonts/nunito-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/v3/style.css?v=3">
+<link rel="stylesheet" href="assets/v3/style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#main">Перейти к содержанию</a>
@@ -51,14 +51,14 @@
       <span class="word__half">Oku</span>
       <span class="pill" id="pill">
         <span class="pill__line"></span>
-        <img src="assets/img/photos/swimming.webp" alt="" data-name="Плавание" class="is-on">
-        <img src="assets/img/photos/football.webp" alt="" data-name="Футбол" loading="lazy">
-        <img src="assets/img/photos/science.webp" alt="" data-name="Наука" loading="lazy">
-        <img src="assets/img/photos/ballet.webp" alt="" data-name="Балет" loading="lazy">
-        <img src="assets/img/photos/music.webp" alt="" data-name="Музыка" loading="lazy">
-        <img src="assets/img/photos/boxing.webp" alt="" data-name="Бокс" loading="lazy">
-        <img src="assets/img/photos/art.webp" alt="" data-name="Рисование" loading="lazy">
-        <span class="pill__tag" id="pillTag">Плавание</span>
+        <img src="assets/img/photos/football-team.webp" alt="" data-name="Футбол" style="--fp:50% 68%" class="is-on">
+        <img src="assets/img/photos/basketball-kid.webp" alt="" data-name="Баскетбол" style="--fp:50% 58%" loading="lazy">
+        <img src="assets/img/photos/codex-laptop.webp" alt="" data-name="Программирование" style="--fp:40% 42%" loading="lazy">
+        <img src="assets/img/photos/skating.webp" alt="" data-name="Фигурное катание" style="--fp:50% 50%" loading="lazy">
+        <img src="assets/img/photos/music-band.webp" alt="" data-name="Музыка" style="--fp:50% 40%" loading="lazy">
+        <img src="assets/img/photos/karate.webp" alt="" data-name="Каратэ" style="--fp:50% 42%" loading="lazy">
+        <img src="assets/img/photos/gymnastics-horse.webp" alt="" data-name="Гимнастика" style="--fp:50% 45%" loading="lazy">
+        <span class="pill__tag" id="pillTag">Футбол</span>
       </span>
       <span class="word__half">Land</span>
     </div>
@@ -80,8 +80,8 @@
   </a>
 
   <a class="t t--photo t--link" href="#kruzhki">
-    <img src="assets/img/photos/basketball.webp" alt="Мальчик в прыжке на тренировке" loading="lazy">
-    <span class="t__over"><b>Дети от 4 до 17 лет</b><small>спорт, танцы, музыка, наука, творчество</small></span>
+    <img src="assets/img/photos/music-band.webp" alt="Трое мальчишек поют и играют на гитарах" style="--fp:50% 12%" loading="lazy">
+    <span class="chip chip--tl"><b>Дети от 4 до 17 лет</b></span>
   </a>
 
   <div class="t t--white t--qr">
@@ -119,35 +119,55 @@
 <section class="block" id="kruzhki" aria-labelledby="h-dirs">
   <div class="block__head">
     <h2 class="h2" id="h-dirs">Найдите своё направление</h2>
-    <p class="block__sub">Каждый месяц подключаем новых партнёров. Вот с чего начинают чаще всего.</p>
+    <p class="block__sub">Каждый месяц подключаем новых партнёров. Вот что выбирают чаще всего.</p>
   </div>
   <div class="bento bento--dirs">
-    <a class="t t--photo t--link d-sport" href="#app">
-      <img src="assets/img/photos/football.webp" alt="Мальчик бьёт по мячу на футбольном поле" loading="lazy">
-      <span class="t__over"><b>Футбол</b><small>5–14 лет, есть пробное занятие</small></span>
+    <a class="t t--photo t--link d-tall" href="#app">
+      <img src="assets/img/photos/football-team.webp" alt="Мальчишки в футбольной форме празднуют гол" style="--fp:50% 62%" loading="lazy">
+      <span class="chip"><b>Футбол</b><small>5–14 лет</small></span>
     </a>
-    <a class="t t--photo t--link" href="#app">
-      <img src="assets/img/photos/swim-kid.webp" alt="Девочка ныряет в бассейне" loading="lazy">
-      <span class="t__over"><b>Плавание</b><small>с 3 лет, есть пробное</small></span>
+    <a class="t t--photo t--link d-tall" href="#app">
+      <img src="assets/img/photos/codex-laptop.webp" alt="Подросток с ноутбуком в классе программирования" style="--fp:45% 40%" loading="lazy">
+      <span class="chip"><b>Программирование</b><small>Scratch, Python, Unity, 8–17 лет</small></span>
     </a>
-    <a class="t t--photo t--link" href="#app">
-      <img src="assets/img/photos/science.webp" alt="Мальчик проводит опыт с пробирками" loading="lazy">
-      <span class="t__over"><b>Наука и IT</b><small>опыты, Scratch, Python, роботы</small></span>
+    <a class="t t--photo t--link d-wide" href="#app">
+      <img src="assets/img/photos/music-band.webp" alt="Мальчишки поют в микрофон и играют на гитарах" style="--fp:50% 40%" loading="lazy">
+      <span class="chip"><b>Музыка</b><small>гитара, вокал, барабаны, домбыра</small></span>
     </a>
-    <a class="t t--photo t--link d-dance" href="#app">
-      <img src="assets/img/photos/ballet.webp" alt="Девочка в балетной пачке" loading="lazy">
-      <span class="t__over"><b>Балет и танцы</b><small>4–14 лет</small></span>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/basketball-kid.webp" alt="Мальчик ведёт баскетбольный мяч" style="--fp:50% 55%" loading="lazy">
+      <span class="chip"><b>Баскетбол</b><small>7–17 лет</small></span>
     </a>
-    <a class="t t--photo t--link d-music" href="#app">
-      <img src="assets/img/photos/music.webp" alt="Мальчик с гитарой" loading="lazy">
-      <span class="t__over"><b>Музыка</b><small>гитара, барабаны, домбыра, вокал</small></span>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/skating.webp" alt="Девочка в голубом платье на льду" style="--fp:50% 48%" loading="lazy">
+      <span class="chip"><b>Фигурное катание</b><small>с 4 лет</small></span>
     </a>
-    <a class="t t--photo t--link d-art" href="#app">
-      <img src="assets/img/photos/boxing.webp" alt="Мальчик в боксёрских перчатках" loading="lazy">
-      <span class="t__over"><b>Бокс и единоборства</b><small>бокс, каратэ, қазақ күресі, 7–17 лет</small></span>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/gymnastics-horse.webp" alt="Мальчик делает упражнение на гимнастическом коне" style="--fp:50% 40%" loading="lazy">
+      <span class="chip"><b>Гимнастика</b><small>5–14 лет</small></span>
+    </a>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/karate.webp" alt="Дети в кимоно отрабатывают удар" style="--fp:50% 45%" loading="lazy">
+      <span class="chip"><b>Каратэ и единоборства</b><small>с 4 лет</small></span>
+    </a>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/volleyball.webp" alt="Девочка принимает мяч в волейболе" style="--fp:45% 45%" loading="lazy">
+      <span class="chip"><b>Волейбол</b><small>8–17 лет</small></span>
+    </a>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/reading.webp" alt="Мальчик за книгой поднял палец — придумал ответ" style="--fp:50% 40%" loading="lazy">
+      <span class="chip"><b>Языки и чтение</b><small>английский, казахский, скорочтение</small></span>
+    </a>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/codex-cube.webp" alt="Мальчик собирает кубик Рубика" style="--fp:50% 45%" loading="lazy">
+      <span class="chip"><b>Логика и шахматы</b><small>шахматы, кубик Рубика</small></span>
+    </a>
+    <a class="t t--photo t--link " href="#app">
+      <img src="assets/img/photos/swimming.webp" alt="Мальчик плывёт кролем в бассейне" style="--fp:50% 45%" loading="lazy">
+      <span class="chip"><b>Плавание</b><small>с 3 лет</small></span>
     </a>
   </div>
-  <p class="note-line">Ещё в каталоге: рисование и лепка, шахматы, гимнастика, ОФП и языки.</p>
+  <p class="note-line">Ещё в каталоге: балет и танцы, рисование и лепка, бокс, ОФП и наука.</p>
 </section>
 
 <!-- ============ РОДИТЕЛЯМ ============ -->
@@ -183,17 +203,10 @@
         </div>
       </div>
     </div>
-    <div class="t t--white mini">
-      <b>Оплата частями в Kaspi</b>
-      <p>Абонемент от 3 месяцев — в рассрочку на 3, 6 или 12 месяцев без переплаты.</p>
-    </div>
-    <div class="t t--white mini">
-      <b>Один абонемент на всех детей</b>
-      <p>Тариф Family: до трёх детей из одной семьи с общим лимитом посещений.</p>
-    </div>
-    <div class="t t--white mini">
-      <b>Без доплат в кружке</b>
-      <p>Занятие входит в абонемент. Если нужна форма или материалы, это указано в карточке.</p>
+    <div class="t t--white perks">
+      <p><b>Оплата частями в Kaspi.</b> Абонемент от 3 месяцев можно разбить на 3, 6 или 12 месяцев без переплаты.</p>
+      <p><b>Один абонемент на всех детей.</b> Тариф Family — до трёх детей из одной семьи с общим лимитом посещений.</p>
+      <p><b>Без доплат в кружке.</b> Занятие входит в абонемент, а нужная форма или материалы указаны в карточке заранее.</p>
     </div>
   </div>
 </section>
@@ -240,6 +253,11 @@
     <div class="t t--dark partner-intro">
       <h2 class="h2" id="h-partner">Новые ученики для вашего кружка</h2>
       <p>Подключение бесплатное. Вы сами решаете, сколько мест отдать OkuLand, а мы платим за каждое посещение.</p>
+      <ul class="safe">
+        <li>Утренние и дневные группы начинают заполняться</li>
+        <li>Карточку кружка видят родители из вашего района</li>
+        <li>Каждое посещение и выплата видны в кабинете</li>
+      </ul>
       <a class="btn btn--coral btn--lg" href="#partner-form">Оставить заявку</a>
     </div>
     <ol class="t t--white psteps">
@@ -248,9 +266,6 @@
       <li><b>Расписание</b><span>Публикуете группы и свободные места в кабинете партнёра.</span></li>
       <li><b>Ученики и выплаты</b><span>Принимаете детей по QR-коду и получаете оплату по акту.</span></li>
     </ol>
-    <div class="t t--tint mini"><b>Загрузка пустых часов</b><p>Утренние и дневные группы начинают окупаться.</p></div>
-    <div class="t t--tint mini"><b>Без вложений в рекламу</b><p>Вашу карточку увидят родители, которые живут рядом.</p></div>
-    <div class="t t--tint mini"><b>Прозрачные выплаты</b><p>Каждое посещение и сумма видны в кабинете партнёра.</p></div>
     <form class="t t--white form" id="partner-form" data-mail="Заявка на партнёрство OkuLand">
       <h3>Заявка на партнёрство</h3>
       <p class="form__hint">Понадобятся документы кружка, адрес помещения, справки о несудимости педагогов и расписание групп.</p>
@@ -283,11 +298,7 @@
     <div class="t t--white about" id="o-nas">
       <h2 class="h3">Почему OkuLand</h2>
       <p>«Оқу» по-казахски — учиться. Мы собираем кружки и секции города в одном приложении, чтобы родителю было просто выбрать, а ребёнку — интересно пробовать новое. Начали в Актобе, потому что сами работаем в детском образовании.</p>
-      <dl class="facts">
-        <div><dt>4–17</dt><dd>лет — возраст учеников</dd></div>
-        <div><dt>24 ч</dt><dd>на разбор жалобы о безопасности</dd></div>
-        <div><dt>0 ₸</dt><dd>подключение для партнёров</dd></div>
-      </dl>
+      <p class="about__more">Принимаем детей от 4 до 17 лет, жалобы о безопасности разбираем за 24 часа, а партнёров подключаем бесплатно.</p>
     </div>
     <div class="t t--tint cities">
       <h2 class="h3">Где работает OkuLand</h2>
@@ -366,6 +377,6 @@
   <a class="btn btn--coral btn--block btn--lg" href="#ceny">Оформить абонемент</a>
 </div>
 
-<script src="assets/v3/main.js?v=3"></script>
+<script src="assets/v3/main.js?v=4"></script>
 </body>
 </html>
